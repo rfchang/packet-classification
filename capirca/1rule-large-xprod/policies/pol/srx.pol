@@ -1,0 +1,12 @@
+header {
+  comment:: "Juniper SRX policy for overlap case."
+  target:: srx from-zone Zone1 to-zone Zone2 inet
+}
+
+term accept-web-services {
+  source-address:: SRC_1
+  destination-address:: SRC_2
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}

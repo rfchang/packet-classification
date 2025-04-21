@@ -1,0 +1,12 @@
+header {
+  comment:: "Cisco ASA policy for overlap case."
+  target:: ciscoasa SamplePolicy
+}
+
+term accept-web-services {
+  source-address:: SRC_1
+  destination-address:: SRC_2
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}

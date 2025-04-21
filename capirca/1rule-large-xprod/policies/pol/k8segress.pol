@@ -1,0 +1,12 @@
+header {
+  comment:: "Kubernetes NetworkPolicy for overlap case, egress direction."
+  target:: k8s EGRESS
+}
+
+term accept-web-services {
+  source-address:: SRC_1
+  destination-address:: SRC_2
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}

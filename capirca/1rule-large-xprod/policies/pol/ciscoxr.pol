@@ -1,0 +1,12 @@
+header {
+  comment:: "Cisco XR policy for overlap case."
+  target:: ciscoxr SamplePolicy object-group
+}
+
+term accept-web-services {
+  source-address:: SRC_1
+  destination-address:: SRC_2
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}

@@ -1,0 +1,12 @@
+header {
+  comment:: "Cisco NX policy for overlap case."
+  target:: cisconx SamplePolicy object-group
+}
+
+term accept-web-services {
+  source-address:: SRC_1
+  destination-address:: SRC_2
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}
