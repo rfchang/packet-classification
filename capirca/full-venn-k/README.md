@@ -1,9 +1,11 @@
 # Introduction
 
 The idea of this policy is to be a difficult one for many algorithms
-to implement.  I believe that at least a version of
+to implement. I believe that at least a version of
 Lakshman-Stiliadis's bit-vector algorithm can handle it well, and
-there may be others.
+there may be others. Here, our goal is the following: given K groups,
+how can we assign individual prefixes to the groups to maximize the 
+number of resulting disjoint subgroups.
 
 The idea is that there are K rules in the policy, for K in the range
 [2, 32].
@@ -30,7 +32,7 @@ such that:
 + for all j _not_ in X, A _does not_ match any prefix in S(j)
 
 A straightforward way to do this is to simply write down all K-bit
-numbers in binary from 1 up to K.
+numbers in binary from 1 up to (2^K)-1.
 
 For each number A, include it as a prefix in set S(j) if and only if
 bit j of A is equal to 1.
