@@ -30,3 +30,51 @@ term accept-web-services3 {
   protocol:: tcp
   action:: accept
 }
+
+term accept-web-services4 {
+  source-address:: SRC_4
+  destination-address:: DST_4
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}
+
+term accept-web-services5 {
+  source-address:: SRC_5
+  destination-address:: DST_5
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}
+
+term accept-web-services6 {
+  source-address:: SRC_6
+  destination-address:: DST_6
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}
+
+term accept-web-services7 {
+  source-address:: SRC_7
+  destination-address:: DST_7
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}
+
+term accept-web-services8 {
+  source-address:: SRC_8
+  destination-address:: DST_8
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}
+
+term accept-web-services9 {
+  source-address:: SRC_9
+  destination-address:: DST_9
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}

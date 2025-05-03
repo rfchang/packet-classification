@@ -6,7 +6,6 @@ import sys
 # work for K up to 32, you might not want to generate a rule set that
 # large.
 
-# K = 3
 K = 10
 max = 1 << K
 
