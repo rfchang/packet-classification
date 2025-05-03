@@ -1,0 +1,36 @@
+header {
+  comment:: "Juniper policy for maximizing disjoint subsets."
+  target:: juniper SamplePolicy inet
+}
+
+term accept-web-services0 {
+  source-address:: SRC_0
+  destination-address:: DST_0
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}
+
+term accept-web-services1 {
+  source-address:: SRC_1
+  destination-address:: DST_1
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}
+
+term accept-web-services2 {
+  source-address:: SRC_2
+  destination-address:: DST_2
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}
+
+term accept-web-services3 {
+  source-address:: SRC_3
+  destination-address:: DST_3
+  destination-port:: WEB_SERVICES
+  protocol:: tcp
+  action:: accept
+}
